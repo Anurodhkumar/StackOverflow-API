@@ -9,7 +9,6 @@ from datetime import datetime,timedelta
 
 @cache_page(60*60*2)
 def home(request):
-    #import pdb;pdb.set_trace()
     query = request.GET.get('query', None)
     try:
         page = request.GET.get('page', 1)
